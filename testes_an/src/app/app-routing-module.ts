@@ -2,8 +2,18 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LivrosModule } from './livros/livros-module';
 
-const routes: Routes = [{ path: 'livros', loadChildren: () => import('./livros/livros-module').then(m => m.LivrosModule) }
+const routes: Routes = [
+  {
+    path: 'livros',
+    loadChildren: () => import('./livros/livros-module').then(m => m.LivrosModule),
+  },
+  {
+    path: 'contador',
+    loadChildren: () => import('./contador/contador-module').then(m => m.ContadorModule),
+  }
 ];
+
+
 
 
 @NgModule({
