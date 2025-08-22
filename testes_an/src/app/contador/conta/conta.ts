@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './conta.css'
 })
 export class Conta {
+  zero = 0;
 
+  adicionar() {
+    this.zero ++; 
+  }
+
+  remover() {
+   this.zero --; 
+  }
 }

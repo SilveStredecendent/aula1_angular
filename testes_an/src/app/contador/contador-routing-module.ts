@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContadorModule } from './contador-module';
+import {Conta} from './conta/conta';
 
-const routes: Routes = [{ path: 'conta', component: ContadorModule}];
+const routes: Routes = [{ path: 'conta', component: Conta}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
