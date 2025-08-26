@@ -1,10 +1,11 @@
-import { Directive, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Diretiva } from './diretiva/diretiva';
 
-
 const routes: Routes = [
-  { path: 'estrutura', component: Diretiva }
+  { 
+    path: 'diretiva', component: Diretiva 
+  }
 ];
 
 @NgModule({

@@ -1,1 +1,7 @@
-<p>diretiva works!</p>
+<h1>Lsitagem de alunos por atividade</h1>
+
+<ul>
+  <li *ngFor="let item of listaalunos">
+    {{ item.cod }} - {{ item.nome }} -{{ item.ativo }}
+  </li>
+</ul>
