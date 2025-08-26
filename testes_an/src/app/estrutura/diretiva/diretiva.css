@@ -1,3 +1,28 @@
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+ul {
+  list-style: none; 
+  display: inline-block; 
+  padding: 0;
+}
+
+.ativo {
+  color: blue; 
+  font-weight: bold;
+}
+
+.inativo {
+  color: red; 
+  font-weight: bold;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
 }
