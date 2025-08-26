@@ -14,4 +14,8 @@ export class Cadastrar {
   dizerOi() {
     this.nome = 'Olá pessoal!';
   }
+
+  mostrarMensagem = true;
+
+  toggleMensagem(){}
 }
