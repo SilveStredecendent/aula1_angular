@@ -1,0 +1,23 @@
+---
+
+**ngIf**
+
+Eu devo primeiro criar uma variável para ser aquela que vai determinar se é mostrado ou não, no caso se é verdadeiro ou falso. Depois, criar um botão que chamará um evento. Esse evento vai alterar o valor da variável para que o `*ngIf` possa mostrar ou esconder o array. Quem faz a verificação é a própria diretiva `*ngIf`, que reage à mudança da variável.
+
+---
+
+**ngFor**
+
+O `*ngFor` vai gerar uma listagem com tudo aquilo que estiver dentro do meu array. Ele itera sobre cada item e repete um bloco de código HTML para cada um deles.
+
+---
+
+**ngClass**
+
+Quando eu crio as classes `ativo` e `inativo` no CSS, o `[ngClass]` aplica os estilos para cada elemento com a condição que eu desejo. Na sintaxe `'ativo': item.ativo`, o `ativo` pega a classe `.ativo` no CSS, e a condição `item.ativo` (que é verdadeiro ou falso) determina se a classe será aplicada. O mesmo acontece para a classe `inativo`.
+
+---
+
+**ngStyle**
+
+Para o `[ngStyle]`, eu criei dois eventos que alteram a variável `tamanhoFonte`, já definida com um valor inicial de 16. O `[ngStyle]` com a sintaxe `'font-size.px': tamanhoFonte` pega o valor dessa variável e aplica o estilo `font-size` diretamente na linha do código HTML. Ele é uma aplicação de estilo *inline*. Os elementos já vão vir com o tamanho definido, e ao clicar no botão, a fonte vai aumentar ou diminuir.

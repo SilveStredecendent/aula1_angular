@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './conta.css'
 })
 export class Conta {
+  
   zero = 0;
 
   adicionar() {
