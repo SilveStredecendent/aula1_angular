@@ -7,10 +7,20 @@
 <div *ngIf="mostrarListagem">
     <ul>
         <li *ngFor="let item of listaprodutos">
-            {{ item.nome }} - {{item.preco}}
+            {{ item.nome }}
+
+            <span [ngStyle]="{'color': item.preco > 2000 ? 'blue' : 'black'}">
+                R$ {{ item.preco }}
+            </span>
+
             <span [ngClass]="{'disponivel': item.estoque > 0, 'indisponivel': item.estoque === 0}">
                 {{ item.estoque > 0 ? 'Disponível' : 'Indisponível' }}
             </span>
         </li>
     </ul>
+</div>
+
+<div>
+    <button (click)="aumentarPreco()">+</button>
+    <button (click)="diminuirPreco()">-</button>
 </div>
