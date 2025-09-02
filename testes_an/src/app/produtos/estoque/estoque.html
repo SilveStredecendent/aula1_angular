@@ -1,0 +1,16 @@
+<h1>Catálogo de Produtos com Estoque</h1>
+
+<div>
+    <button (click)="toggleMensagem()">Mostar os produtos</button>
+</div>
+
+<div *ngIf="mostrarListagem">
+    <ul>
+        <li *ngFor="let item of listaprodutos">
+            {{ item.nome }} - {{item.preco}}
+            <span [ngClass]="{'disponivel': item.estoque > 0, 'indisponivel': item.estoque === 0}">
+                {{ item.estoque > 0 ? 'Disponível' : 'Indisponível' }}
+            </span>
+        </li>
+    </ul>
+</div>
