@@ -21,7 +21,15 @@ const routes: Routes = [
   },
   {
     path: 'produtos',
-    loadChildren: () => import('./produtos/produtos-module').then(m => m.ProdutosModule)
+    loadChildren: () => import('./produtos/produtos-module').then(m => m.ProdutosModule),
+  },
+  {
+  path: 'produtosmodule',
+  loadChildren: () => import('./produtosmodule/produtosmodule-module').then(m => m.ProdutosmoduleModule)
+  },
+  {
+    path: 'sharedmodule',
+    loadChildren: () => import('./sharedmodule/sharedmodule-module').then(m => m.SharedmoduleModule)
   }
 ];
 

@@ -1,12 +1,13 @@
 ---
 
-**Interpolação `{{ }}`**
+Interpolação `{{ }}`
 
 A interpolação permite que você mostre o valor de uma propriedade (variável) da sua classe diretamente no template HTML. No seu código, `{{zero}}` pega o valor da variável **`zero`** da sua classe e exibe na tela.
 
 ---
 
-**Event Binding `( )`**
+Event Binding `( )`
 
-O *Event Binding* permite que você responda a eventos do usuário, como um clique. A sintaxe `(click)="adicionar()"` diz ao Angular para executar o método **`adicionar()`** da sua classe sempre que o botão "Adicione um" for clicado. Da mesma forma, `(click)="remover()"` executa o método **`remover()`** quando o botão "Remova um" é clicado.
-Esses métodos, `adicionar()` e `remover()`, alteram o valor da propriedade `zero` (adicionando ou subtraindo 1), e a interpolação **`{{zero}}`** atualiza o número na tela automaticamente, mostrando o resultado do evento.
+O *Event Binding* permite que você responda a eventos do usuário, como um clique. A sintaxe `(click)="adicionar()"` diz ao Angular para executar o método **`adicionar()`** da sua classe sempre que o botão "Adicione um" for clicado. Da mesma forma, `(click)="remover()"` executa o método **`remover()`** quando o botão "Remova um" é clicado. Esses métodos, `adicionar()` e `remover()`, alteram o valor da propriedade `zero` (adicionando ou subtraindo 1), e a interpolação **`{{zero}}`** atualiza o número na tela automaticamente, mostrando o resultado do evento.
+
+---

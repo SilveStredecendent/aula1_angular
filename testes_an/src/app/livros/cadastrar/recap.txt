@@ -1,18 +1,18 @@
 ---
 
-**Interpolação `{{ }}`**
+Interpolação {{ }}
 
 A interpolação permite que você mostre o valor de uma propriedade (variável) da sua classe diretamente no template HTML. No seu código, `{{ nome }}` pega o valor da variável **`nome`** da classe `Cadastrar` e exibe na tela. Quando você clica no botão, o método `dizerOi()` muda o valor de `nome` para 'Olá pessoal!', e a interpolação atualiza o texto na tela automaticamente.
 
 ---
 
-**Property Binding `[ ]`**
+Property Binding `[ ]`
 
 O *Property Binding* permite que você ligue uma propriedade de um elemento HTML a uma propriedade da sua classe. No seu exemplo, `[src] = "caminhoimagem"` liga a propriedade `src` da tag `<img>` à variável **`caminhoimagem`** da sua classe. Assim, a imagem exibida será aquela que estiver no endereço armazenado em `caminhoimagem`.
 
 ---
 
-**Event Binding `( )`**
+Event Binding `( )`
 
 O *Event Binding* permite que você responda a eventos do usuário, como um clique. A sintaxe `(click)="dizerOi()"` diz ao Angular para executar o método **`dizerOi()`** da sua classe sempre que o botão for clicado. Esse método altera o valor da propriedade `nome` e você vê o resultado na tela graças à interpolação.
 
