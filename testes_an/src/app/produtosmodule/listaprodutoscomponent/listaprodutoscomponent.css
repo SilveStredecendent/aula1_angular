@@ -1,0 +1,14 @@
+div{
+    text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+ul {
+  list-style: none; 
+  display: inline-block; 
+  padding: 0;
+}

@@ -8,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class Listaprodutoscomponent {
 
+  novoProduto = "";
+
+  mostrarListaSimples = true;
+
+   listasimples = [
+    {produto: 'Uva'},
+    {produto: 'Banana'},
+    {produto: 'Amora'},
+    {produto: 'Melancia'},
+    {produto: 'Maça'},
+    {produto: 'Cacau'},
+   ]
+
 }

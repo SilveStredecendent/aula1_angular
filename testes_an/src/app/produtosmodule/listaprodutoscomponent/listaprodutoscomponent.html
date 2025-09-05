@@ -1,1 +1,20 @@
-<p>listaprodutoscomponent works!</p>
+<div *ngIf="mostrarListaSimples">
+    <ul>
+        <li *ngFor="let item of listasimples">
+            {{ item.produto }}
+        </li>
+    </ul>
+</div>
+
+<div>
+    <app-botaocomponent></app-botaocomponent>
+</div>
+
+<div>
+    <input [(ngModel)]="novoProduto" placeholder=" Digite um produto " />
+
+</div>
+
+<div>
+    <p>Você digitou: {{ novoProduto }}</p>
+</div>

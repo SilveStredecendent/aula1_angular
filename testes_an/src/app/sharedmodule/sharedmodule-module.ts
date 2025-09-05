@@ -6,9 +6,7 @@ import { Botaocomponent } from './botaocomponent/botaocomponent';
 
 
 @NgModule({
-  declarations: [
-    Botaocomponent
-  ],
+  declarations: [Botaocomponent], exports: [Botaocomponent],
   imports: [
     CommonModule,
     SharedmoduleRoutingModule
