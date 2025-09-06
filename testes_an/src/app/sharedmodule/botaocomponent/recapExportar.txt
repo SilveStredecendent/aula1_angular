@@ -1,0 +1,9 @@
+Para exportar um módulo no Angular, abra o arquivo do módulo que contém o componente, diretiva ou pipe que você quer disponibilizar, por exemplo, xxxx-module.ts.
+
+No topo do arquivo, certifique-se de que o componente ou recurso está declarado no array declarations do @NgModule.
+
+Em seguida, vá até o array exports dentro do decorador @NgModule e adicione o componente ou recurso ali, por exemplo,
+
+exports: [ ListaProdutosComponent ].
+
+Depois disso, qualquer outro módulo que importar este módulo poderá usar o componente, diretiva ou pipe exportado nos seus templates HTML.

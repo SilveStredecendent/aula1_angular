@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'sharedmodule',
     loadChildren: () => import('./sharedmodule/sharedmodule-module').then(m => m.SharedmoduleModule)
+  },
+  {
+    path: 'nietzsche',
+    loadChildren: () => import('./nietzsche/nietzsche-module').then(m => m.NietzscheModule)
   }
 ];
 

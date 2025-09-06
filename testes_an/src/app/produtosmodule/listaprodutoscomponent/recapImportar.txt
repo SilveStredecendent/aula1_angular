@@ -1,0 +1,9 @@
+Para importar um módulo no Angular, abra o arquivo do módulo onde você quer usar a funcionalidade, xxxx-module.ts. 
+
+No topo do arquivo, adicione a importação do módulo necessário, como import { FormsModule } from '@angular/forms';. 
+
+Em seguida, vá até o array imports dentro do decorador @NgModule e adicione o módulo ali, por exemplo, 
+
+imports: [ FormsModule ]. 
+
+Depois disso, todos os recursos do módulo importado estarão disponíveis para uso nos templates HTML dos componentes deste módulo.
