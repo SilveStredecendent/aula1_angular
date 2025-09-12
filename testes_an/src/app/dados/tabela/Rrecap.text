@@ -1,0 +1,49 @@
+
+---
+
+Modelo (`Produtos.ts`)
+
+No projeto, a ideia é criar uma tabela que mostre produtos. A melhor prática é criar uma pasta dentro do módulo chamada, por exemplo, modelo, e dentro dela criar o arquivo Produtos.ts. Esse arquivo define a estrutura de um produto, dizendo que ele precisa ter um nome do tipo texto e um valor do tipo número, mas não guarda os valores.
+export interface Produtos {
+  nome: string;
+  valor: number;
+}
+
+
+---
+
+Componente (`tabela.ts`)
+
+No componente, eu importo o modelo e crio duas coisas principais. Primeiro, um array chamado `displayedColumns`, que define a ordem e o nome das colunas que a tabela vai mostrar. Segundo, o `dataSource`, que é um array de produtos de verdade, preenchido com alguns valores. 
+
+
+displayedColumns: string[] = ['nome', 'valor', 'adicionar'];
+
+dataSource: Produtos[] = [
+  { nome: 'coca-cola', valor: 10 },
+  { nome: 'fanta', valor: 8 }
+];
+
+---
+
+Template (`tabela.html`)
+
+No HTML, eu uso o `mat-table` para criar a tabela e ligo o `dataSource` nela com `[dataSource]="dataSource"`.
+Depois, para cada coluna, eu uso um `ng-container` com `matColumnDef`. Dentro dele, defino o cabeçalho com `<th>` e o conteúdo de cada célula com `<td>`. 
+
+
+<ng-container matColumnDef="nome">
+  <th mat-header-cell *matHeaderCellDef> Nome Produto </th>
+  <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+
+
+O mesmo acontece para a coluna de valor. Já a coluna de adicionar mostra botões em vez de texto.
+
+No final, uso o `displayedColumns` para renderizar tanto o cabeçalho quanto as linhas da tabela.
+
+
+<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+
+---

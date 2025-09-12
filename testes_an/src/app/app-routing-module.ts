@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'nietzsche',
     loadChildren: () => import('./nietzsche/nietzsche-module').then(m => m.NietzscheModule)
+  },
+  {
+    path: 'dados',
+    loadChildren: () => import('./dados/dados-module').then(m => m.DadosModule)
   }
 ];
 
