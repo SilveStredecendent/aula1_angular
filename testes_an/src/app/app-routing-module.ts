@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'funcionario',
     loadChildren: () => import('./funcionario/funcionario-module').then(m => m.FuncionarioModule)
+  },
+  {
+    path: 'schopenhauer',
+    loadChildren: () => import('./schopenhauer/schopenhauer-module').then(m => m.SchopenhauerModule)
   }
 ];
 

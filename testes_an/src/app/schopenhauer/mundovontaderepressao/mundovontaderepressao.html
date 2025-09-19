@@ -1,0 +1,8 @@
+<div>
+  <button (click)="alternarLogin()">
+    {{ logado ? 'Sair' : 'Entrar' }}
+  </button>
+
+  <p *ngIf="logado">Bem-vindo ao sistema!</p>
+  <p *ngIf="!logado">Você precisa se autenticar.</p>
+</div>
