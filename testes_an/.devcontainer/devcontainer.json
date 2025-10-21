@@ -1,0 +1,19 @@
+{
+  "name": "Ambiente de Desenvolvimento Angular",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "angular.ng-template",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "PKief.material-icon-theme"
+      ]
+    }
+  },
+  "forwardPorts": [4200],
+  "postCreateCommand": "npm install",
+  "remoteUser": "node"
+}
