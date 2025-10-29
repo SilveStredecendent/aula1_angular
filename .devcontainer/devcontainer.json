@@ -9,7 +9,8 @@
         "angular.ng-template",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "PKief.material-icon-theme"
+        "PKief.material-icon-theme",
+        "ms-azuretools.vscode-docker"
       ]
     }
   },
