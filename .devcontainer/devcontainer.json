@@ -14,6 +14,6 @@
     }
   },
   "forwardPorts": [4200],
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "cd testes_an && npm install",
   "remoteUser": "node"
 }
