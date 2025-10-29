@@ -1,59 +1,58 @@
-# TestesAn
+# Gohita (Projeto de Estudos)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
+> Aplicação front-end desenvolvida para fins de estudo, aplicando conceitos de Angular, TypeScript e componentização.
 
-## Development server
+## Sobre o Projeto
 
-To start a local development server, run:
+Este é um **projeto de estudos** focado em aplicar conceitos de desenvolvimento front-end com Angular.
+
+O projeto está em constante evolução. Novas funcionalidades são implementadas progressivamente, acompanhando o avanço dos estudos. O objetivo principal é servir como um "playground" para testar e consolidar o aprendizado de forma prática.
+
+## Features (Planejadas ou em Implementação)
+
+As funcionalidades abaixo são implementadas ou planejadas conforme os tópicos de estudo são introduzidos:
+
+* [x] Configuração de ambiente com Dev Containers (Codespaces)
+* [x] Criação e estilização de componentes
+* [x] Implementação de Roteamento (Angular Router)
+* [ ] Data Binding (One-way e Two-way)
+* [x] Uso de Diretivas (`*ngIf`, `*ngFor`)
+* [x] Criação de Serviços (Services)
+* [ ] Injeção de Dependências
+* [ ] Consumo de APIs externas (com `HttpClientModule`)
+* [ ] Formulários (Template-Driven ou Reactive Forms)
+* [ ] Testes unitários
+
+## Tecnologias Principais
+
+* **Framework:** Angular
+* **Linguagem:** TypeScript
+* **Estilização:** SCSS / CSS
+* **Ambiente:** GitHub Codespaces / Dev Containers (Docker)
+* **Gerenciador de Pacotes:** NPM
+* **Ferramentas (VS Code):** Prettier, ESLint
+
+## Como Rodar o Projeto (Ambiente de Desenvolvimento)
+
+Este projeto é configurado para ser executado dentro de um **Dev Container** (GitHub Codespaces ou VS Code Local). Isso garante que todo o ambiente (Node.js, Angular CLI e extensões) seja configurado automaticamente.
+
+### Opção 1: GitHub Codespaces (Recomendado)
+
+1.  Na página principal do repositório, clique em **"\<\> Code"** > **"Codespaces"**.
+2.  Clique em **"Create codespace on main"**.
+3.  O ambiente será criado e o comando `npm install` será executado automaticamente (via `postCreateCommand`).
+
+### Opção 2: VS Code Local (Requer Docker)
+
+1.  Clone o repositório e abra a pasta no VS Code.
+2.  Tenha o [Docker Desktop](https://www.docker.com/products/docker-desktop/) rodando.
+3.  O VS Code detectará a pasta `.devcontainer` e perguntará se você quer **"Reopen in Container"**. Clique sim.
+
+---
+
+### Iniciando a Aplicação
+
+Após o contêiner carregar, abra o terminal do VS Code e execute:
 
 ```bash
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
